@@ -14,8 +14,8 @@ dotnet build
 1. IdentityServer - Para gestión de autenticación
 2. API - Sirve info al cliente y está protegida por medio del server de IdentityServer
 3. Cliente - Solicita información a la API 
-  3.1 Solicita token de acceso a IdentityServer
-  4.1 Solicita indo a API por medio de el token de acceso
+  - Solicita token de acceso a IdentityServer
+  - Solicita indo a API por medio de el token de acceso
   
 **Ejemplo tomado de:**
 
