@@ -15,7 +15,7 @@ dotnet build
 2. API - Sirve info al cliente y está protegida por medio del server de IdentityServer
 3. Cliente - Solicita información a la API 
    - Solicita token de acceso a IdentityServer
-   - Solicita indo a API por medio de el token de acceso
+   - Solicita info a API por medio de el token de acceso
   
 **Ejemplo tomado de:**
 
