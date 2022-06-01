@@ -4,8 +4,10 @@
 
 ## Ejecutar
   
-`  dotnet restore
-  dotnet build`
+```
+dotnet restore
+dotnet build
+```
   
 ## La solución cuenta con 3 proyectos:
 
