@@ -18,8 +18,16 @@ dotnet build
 > **Descomentar del archivo Startup.cs del proyecto IdentityServer la línea 53 ( InitializeDatabase(app); ), solo ejecutar la primera vez para cargar info del archivo Config.cs, después comentar de nuevo la línea 53**
 
 > Del archivo Startup.cs del proyecto IdentityServer ajustar cadena de conexión
-  
+
+## Ejecutar
+```
+dotnet ef migrations add InitialIdentityServerPersistedGrantDbMigration -c PersistedGrantDbContext -o Data/Migrations/IdentityServer/PersistedGrantDb
+
+dotnet ef migrations add InitialIdentityServerConfigurationDbMigration -c ConfigurationDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
+```
+
 URL para validar Identity Server: `https://localhost:5001/.well-known/openid-configuration`
+
 
 ## La solución cuenta con 3 proyectos:
 
@@ -29,4 +37,4 @@ URL para validar Identity Server: `https://localhost:5001/.well-known/openid-con
    - Solicita token de acceso a IdentityServer
    - Solicita info a API por medio de el token de acceso
   
-**Ejemplo tomado de:** [Protecting an API using Client Credentials](https://identityserver4.readthedocs.io/en/latest/quickstarts/1_client_credentials.html)
+**Ejemplo tomado de:** [Using EntityFramework Core for configuration and operational data](https://identityserver4.readthedocs.io/en/latest/quickstarts/5_entityframework.html)
