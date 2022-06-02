@@ -15,7 +15,9 @@ dotnet restore
 dotnet build
 ```
 ## Importante
-> **Descomentar del proyecto IdentityServer archivo Startup.cs la línea 53 ( InitializeDatabase(app); ), solo ejecutar la primera vez para cargar info del archivo Config.cs, después comentar de nuevo la línea 53**
+> **Descomentar del archivo Startup.cs del proyecto IdentityServer la línea 53 ( InitializeDatabase(app); ), solo ejecutar la primera vez para cargar info del archivo Config.cs, después comentar de nuevo la línea 53**
+
+> Del archivo Startup.cs del proyecto IdentityServer ajustar cadena de conexión
   
 URL para validar Identity Server: `https://localhost:5001/.well-known/openid-configuration`
 
