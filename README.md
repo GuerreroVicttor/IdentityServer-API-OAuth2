@@ -8,7 +8,9 @@
 dotnet restore
 dotnet build
 ```
-  
+
+URL para validar Identity Server: https://localhost:5001/.well-known/openid-configuration
+
 ## La solución cuenta con 3 proyectos:
 
 1. IdentityServer - Para gestión de autenticación
